@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Sumit</title>
+</head>
+<link rel="stylesheet" href="1.css">
+<style>
+    /* Css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/31232.jpg');
+        background-size: 1920px 1080px;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    .logo {
+        display: inline-block;
+        border 2px solid rgb(230, 71, 71);
+        width: 10%;
+        margin: 4px;
+        background-color: rgba(70, 70, 67, 0.89);
+        position: absolute;
+        left: 34px;
+        top 12px
+    }
+
+    .headercontent {
+        display: block;
+        /* border: 2px solid rgb(230, 71, 71); */
+        /* height: ; */
+        height: 45px;
+        width: 60%;
+        margin: 4px auto;
+        background-color: rgba(29 46 52 /50%);
+        border-radius: 64px;
+    }
+
+    .navbar {
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    .navbar li a {
+        margin: 10px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 30px 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(230, 94, 94);
+        text-decoration: underline;
+    }
+
+    .buttons {
+        position: absolute;
+        right: 35px;
+        top: 12px;
+        display: inline-block;
+
+    }
+
+    .btn {
+        margin: 8px;
+        padding: 0px 15px;
+        background-color: rgba(29 46 52 /50%);
+        color: aliceblue;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: black;
+        color: aliceblue;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .container {
+        position: fixed;
+        top: 117px;
+        left: 10px;
+        /* border: 2px solid black; */
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.397);
+        margin: 10px;
+        padding: 13px;
+        display: block;
+        width: 10%%;
+    }
+
+    .container h1 {
+        margin: 2px;
+        text-align: center;
+        color: rgb(8, 8, 8);
+    }
+
+    .formgroup input {
+        display: block;
+        border: none;
+        border-radius: 15px;
+        text-align: center;
+        margin: 4px auto;
+        padding: 4px;
+        width: 200px;
+        font-size: 18px;
+        background-color: rgb(5, 5, 5);
+        color: aliceblue;
+    }
+
+    ::placeholder {
+        color: rgba(79, 191, 243, 0.705);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .formgroup select {
+        background-color: black;
+        display: block;
+        border-radius: 15px;
+        border: none;
+        text-align: center;
+        margin: 4px auto;
+        padding: 2px;
+        width: 208px;
+        font-size: 18px;
+        color: rgba(79, 191, 243, 0.705);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .formgroup button {
+        background-color: rgb(133, 127, 127);
+        display: block;
+        border-radius: 15px;
+        border: none;
+        text-align: center;
+        margin: 4px auto;
+        padding: 2px;
+        width: 208px;
+        font-size: 18px;
+        color: rgb(8, 8, 8);
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    }
+
+    .formgroup button:hover {
+        background-color: black;
+        border-radius: 15px;
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        color: rgba(79, 191, 243, 0.705);
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    }
+</style>
+
+<body>
+    <header class="header fixed">
+        <!-- this is for navbar -->
+        <div class="logo">
+            LOGO HERE
+        </div>
+        <div class="headercontent">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Workout Program</a></li>
+                <li><a href="#">Calories Calculator</a></li>
+                <li><a href="#">Diet Plan</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN US NOW</h1>
+        <form action="noaction.php" class="formgroup">
+            <div>
+                <input type="text" name="myname" id="name" placeholder="Enter Your Name">
+            </div>
+            <div>
+                <input type="text" name="myage" id="age" placeholder="Enter Your Age">
+            </div>
+            <div>
+                <input type="text" name="mycontactno" id="contactno" placeholder="Enter Your Contact No.">
+            </div>
+            <div>
+                <input type="text" name="mylocality" id="locality" placeholder="Enter Your Locality">
+            </div>
+            <div>
+                <input type="text" name="myemail" id="email" placeholder="Enter Your Email ID">
+            </div>
+            <div>
+                <select name="Mygender" id="gender">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+            </div>
+            <div>
+                <button class="btn2">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
